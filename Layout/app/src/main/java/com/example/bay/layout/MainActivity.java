@@ -1,5 +1,6 @@
 package com.example.bay.layout;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     String listArray[]={
-            "ASP","C#","HTML5","Javascript","Java"
+            "Linier Vertical","Linier Horizontal","Linier Vertical Equal Height",
+            "Linier Vertical Leftover Height","Linier Vertical Equal Width","Linier Vertical Leftover Width","Relative 1","Relative 2"
     };
 
     @Override
@@ -27,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,int position, long id) {
                 String value = (String)listView.getItemAtPosition(position);
                 Toast.makeText(getBaseContext(),value,Toast.LENGTH_SHORT).show();
+                Intent intent=new Intent(MainActivity.this,LayoutActivity.class);
+                intent.putExtra("layout",value);
+                startActivity(intent);
             }
         });
 
