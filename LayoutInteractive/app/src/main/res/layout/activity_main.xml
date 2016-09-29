@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    tools:context="com.example.bay.layoutinteractive.MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pehitungan Volume Balok"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    <TextView
+        android:id="@+id/textPanjang"
+        android:layout_below="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panjang :"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/editPanjang"
+        android:layout_below="@+id/title"
+        android:layout_toRightOf="@+id/textPanjang"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textPanjang"
+        android:id="@+id/textLebar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lebar      :"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/editLebar"
+        android:layout_below="@+id/editPanjang"
+        android:layout_toRightOf="@+id/textLebar"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textLebar"
+        android:id="@+id/textTinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi     :"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/editTinggi"
+        android:layout_below="@+id/editLebar"
+        android:layout_toRightOf="@+id/textTinggi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/textTinggi"
+        android:id="@+id/textHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil       :"
+        android:textSize="20dp"/>
+    <EditText
+        android:id="@+id/editHasil"
+        android:layout_below="@+id/editTinggi"
+        android:layout_toRightOf="@+id/textHasil"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+    <Button
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonHitung"
+        android:layout_below="@+id/editHasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"/>
+</RelativeLayout>
