@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
                 Bundle bundle=new Bundle();
                 username=editUsername.getText().toString();
                 password=editPassword.getText().toString();
+
+                User user=new User(username,password);
                 if(username.isEmpty()){
                     Toast.makeText(getApplicationContext(),"Username belum diisi",Toast.LENGTH_LONG).show();
                     return;
@@ -39,8 +41,10 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(),"Password belum diisi",Toast.LENGTH_LONG).show();
                     return;
                 }
-                bundle.putString("username",username);
-                bundle.putString("password",password);
+//                bundle.putString("username",username);
+//                bundle.putString("password",password);
+
+                bundle.putSerializable("user",user);
 
                 intent.putExtras(bundle);
                 startActivity(intent);

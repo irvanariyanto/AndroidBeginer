@@ -19,7 +19,8 @@ public class Activity2 extends Activity {
         password=(TextView)findViewById(R.id.password);
 
         Bundle bundle=getIntent().getExtras();
-        username.setText(bundle.getString("username"));
-        password.setText(bundle.getString("password"));
+        User user= (User) bundle.getSerializable("user");
+        username.setText(user.getUsername());
+        password.setText(user.getPassword());
     }
 }
