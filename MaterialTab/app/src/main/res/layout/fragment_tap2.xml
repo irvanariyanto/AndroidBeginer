@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bay.materialtab.MainActivity">
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tab_2"
+        android:id="@+id/txt_content_tab_2"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_click_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Klik saya"
+        android:layout_below="@+id/txt_content_tab_2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>
